@@ -22,7 +22,7 @@
            Version and build timestamp due to inability to pin bower dependencies 
           -->
         <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
-        <appversion>2.0.0-SNAPSHOT</appversion>
+        <appversion>2.0.0</appversion>
         <buildno>${maven.build.timestamp}</buildno>
     </properties>
 
@@ -192,8 +192,8 @@
                                         <property name="myAppversion" value="${appversion}"/>
 
                                         <replace encoding="UTF-8">
-                                            <replacefilter token='%%appversion%%' value='${myBuildno}' />
-                                            <replacefilter token='%%buildno%%' value='${myAppversion}' />
+                                            <replacefilter token='%%buildno%%' value='${myBuildno}' />
+                                            <replacefilter token='%%appversion%%' value='${myAppversion}' />
 
                                             <fileset dir="${basedir}/dist/js" casesensitive="yes">
                                                 <include name="**/*.js"/>
